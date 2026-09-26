@@ -3,11 +3,9 @@
 #include <sstream>
 #include <thread>
 #include <chrono>
-#include<mutex>
-
+#include <mutex>
 
 using namespace std;
-
 
 /*
 todo: 
@@ -15,6 +13,7 @@ fix threading
 stop_marquee
 exit
 */
+
 //Shared states
 string marquee_text = "Hello World, Hello Universe!";
 bool marquee_running = false;
@@ -22,8 +21,8 @@ bool program_running = true;
 int speed = 100;
 int consoleWidth = 50;
 
-mutex state_mutex; 
 // Guards marquee_text, marquee_running, speed, and program_running
+mutex state_mutex; 
 
 void header() {
   std::cout << "Welcome to CSOPESY!\n";
@@ -47,7 +46,6 @@ void help() {
   std::cout << "exit - terminates the console\n\n";
 }
 
-
 int choice_map(std::string& command) {
   if (command == "help") {
     return 1;
@@ -66,8 +64,6 @@ int choice_map(std::string& command) {
   }
 }
 
-
-
 void marquee(const std::string& text, int pos, int width) {
   std::string display(width, ' ');
 
@@ -77,7 +73,6 @@ void marquee(const std::string& text, int pos, int width) {
       display[current_pos] = text[i];
     }
   }
-
   std::cout << "\r" << display << std::flush;
 }
 
@@ -150,20 +145,12 @@ void run_marquee_logic(){
     } else {
       // Idle pause delay
       this_thread::sleep_for(chrono::milliseconds(50));
-    
-
     }
-      
-
   }
-
-
 }
 
 int main() {
   
- 
-
   header();
   thread t1(run_marquee_logic);
 
