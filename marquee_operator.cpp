@@ -16,10 +16,12 @@ void header() {
   std::cout << "Welcome to CSOPESY!\n";
   std::cout << "\n";
   std::cout << "Group developers:\n";
-  std::cout << "Ab, Cidi\n";
-  std::cout << "De, Fig\n";
+  std::cout << "Chua, Myka Nadine\n";
+  std::cout << "Lim, Julienne Skye\n";
+  std::cout << "Ong, Eiress Bassey\n";
+  std::cout << "Xu, Kai Wen\n";
   std::cout << "\n";
-  std::cout << "Version date: 2030-09-19";
+  std::cout << "Version date: 2026-09-25";
   std::cout << "\n";
 }
 
