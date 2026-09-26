@@ -8,6 +8,7 @@ using namespace std;
 
 /*
 todo: 
+fix threading
 stop_marquee
 exit
 */
