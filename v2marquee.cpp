@@ -169,7 +169,7 @@ int main() {
 
   while(true) {
   
-    std::cout << "Command> ";
+    std::cout << "\nCommand> ";
     std::string input;
     if (!std::getline(cin >> std::ws, input)) break;
 
