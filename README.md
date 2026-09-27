@@ -5,8 +5,8 @@
 - Xu, Kai Wen
 
 #### How to Run:
-##### Command Line
-Run the following commands in the command line:
-1. `g++ marquee_operator.cpp`
-2. `/.marquee_operator`
+##### Command Line (Windows Command Prompt / PowerShell)
+Run the following commands in your terminal:
+1. `g++ marquee_operator.cpp -o marquee_operator.exe`
+2. `marquee_operator.exe`
 
