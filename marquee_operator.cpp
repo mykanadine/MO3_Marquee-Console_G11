@@ -180,7 +180,7 @@ void render() {
   oss << "Ong, Eiress Bassey" << "\x1b[K\n";
   oss << "Xu, Kai Wen" << "\x1b[K\n";
   oss << "\x1b[K\n";
-  oss << "Version date: 2026-09-25" << "\x1b[K\n";
+  oss << "Version date: 2026-09-27" << "\x1b[K\n";
   oss << "\x1b[K\n";
   oss << "[" << text << "]" << "\x1b[K\n";
   oss << "\x1b[K\n";
