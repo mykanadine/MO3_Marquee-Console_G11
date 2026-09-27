@@ -44,11 +44,7 @@ bool try_read_char(char& c) {
 const char BACKSPACE_CODE = 8; // what _getch() sends for backspace
 
 void clear_screen() {
-#ifdef _WIN32
   system("cls");
-#else
-  system("clear");
-#endif
 }
 
 string help_text() {
